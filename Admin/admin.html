@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="districts.js" defer></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx-female'></i>
+        <span class="logo_name">UserName</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-key'></i>
+            <span class="links_name">My Rents</span>
+          </a>
+        </li>
+        <li>
+          <a href="#mybookings">
+            <i class='bx bx-home-heart'></i>
+            <span class="links_name">My Bookings</span>
+          </a>
+        </li>
+        
+
+        <li class="log_out">
+          <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav style="background: #ffff99;">
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">My Rents & Bookings</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <img src="images/profile.jpg"  />
+          <span class="admin_name">Profile</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+
+      <div class="right-side" style="">
+                <h1 style="text-decoration: underline;">Earn Passive Income by listing your house for rent</h1>
+                <div class="formdiv" style="display: flex;position: relative;flex-direction: row;">
+                      <form action="#" style="width: 30%;">
+                         <div class="input-box" >
+                            <input type="number" name="number" placeholder="Phone Number"  style="height:30px; width: 300px;border-radius: 50px;font-size: 0.8rem;padding-left:5px;border:2px solid var(--main-color);" required />
+                        </div>
+                        <br>
+                        <div class="input-box message-box" >
+                            <textarea placeholder="Address" name="address" style="height:100px ;width: 300px;justify-content: center;border-radius: 10px;border:2px solid var(--main-color);"required ></textarea>
+                        </div>
+                        <br>
+                        <div class="input-box message-box" >
+                            <textarea placeholder="Details for rent" name="details " style="height:100px ;width: 300px;justify-content: center;border-radius: 10px;border:2px solid var(--main-color);"required ></textarea>
+                        </div>
+                       <br>
+                        
+                        
+                    
+
+                        <div class="form-group col-md-4">
+                                
+                                <select class="form-control" id="inputState" style="display: flex;justify-content: center;width: 300px;border:2px solid var(--main-color);  ">
+                                                    <option value="SelectState">Select State</option>
+                                                    <option value="Andra Pradesh">Andra Pradesh</option>
+                                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                    <option value="Assam">Assam</option>
+                                                    <option value="Bihar">Bihar</option>
+                                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                                    <option value="Goa">Goa</option>
+                                                    <option value="Gujarat">Gujarat</option>
+                                                    <option value="Haryana">Haryana</option>
+                                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                    <option value="Jharkhand">Jharkhand</option>
+                                                    <option value="Karnataka">Karnataka</option>
+                                                    <option value="Kerala">Kerala</option>
+                                                    <option value="Madya Pradesh">Madya Pradesh</option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Manipur">Manipur</option>
+                                                    <option value="Meghalaya">Meghalaya</option>
+                                                    <option value="Mizoram">Mizoram</option>
+                                                    <option value="Nagaland">Nagaland</option>
+                                                    <option value="Orissa">Orissa</option>
+                                                    <option value="Punjab">Punjab</option>
+                                                    <option value="Rajasthan">Rajasthan</option>
+                                                    <option value="Sikkim">Sikkim</option>
+                                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                                    <option value="Telangana">Telangana</option>
+                                                    <option value="Tripura">Tripura</option>
+                                                    <option value="Uttaranchal">Uttaranchal</option>
+                                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                    <option value="West Bengal">West Bengal</option>
+                                                    <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                    <option value="Chandigarh">Chandigarh</option>
+                                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                                    <option value="Daman and Diu">Daman and Diu</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Lakshadeep">Lakshadeep</option>
+                                                    <option value="Pondicherry">Pondicherry</option>
+                                                  </select>
+                      </div>
+                      <br>
+                      <div class="form-group col-md-4">
+                                
+                                <select class="form-control" id="inputDistrict" style="display: flex;justify-content: center;width: 300px;border:2px solid var(--main-color);">
+                                    <option value="">-- select one -- </option>
+                                </select>
+                      </div>
+                      <br>
+
+                      <input type="file" id="submit" value="add" name="image" class="btn" style="display: flex;justify-content: center;width: 300px;border:2px solid var(--main-color);">
+                      <br>
+                      <div class="button" >
+                            <input type="submit" value="Submit Details" style="width: 300px;height: 50px;border-radius: 50px;background: cyan;border:2px solid var(--main-color); cursor: pointer;"/>
+                      </div>
+                    </form>
+                    <div class="myrents">
+
+                      <h1 >My Assets</h1>
+                            <table>
+                                  <tr>
+                                    <th>
+                                      Address
+                                    </th>
+                                    <th>
+                                      District
+                                    </th>
+                                    <th>
+                                      State
+                                    </th>
+                                    <th>
+                                      Tenant
+                                    </th>
+                                    <th>
+                                      Delete
+                                    </th>
+
+                                  </tr> 
+                                  <tr>
+                                     <td>M.G Road Bangalore-560006</td>
+                                     <td>Bangalore</td>
+                                     <td>Karnataka</td>
+                                     <td>UserName</td>
+                                     <td><a href="">Delete</a></td>
+                                  </tr> 
+
+                            </table>
+                    </div>
+
+              </div>
+
+              <div >
+
+                <br>
+                <br>
+                
+              </div>
+              <div class="mybookings" id="mybookings">
+
+
+                      <h1 >My Bookings</h1>
+                            <table>
+                                  <tr>
+                                    <th>
+                                      Address
+                                    </th>
+                                    <th>
+                                      District
+                                    </th>
+                                    <th>
+                                      State
+                                    </th>
+                                    <th>
+                                      Date-In
+                                    </th>
+                                    <th>
+                                      Date-Out
+                                    </th>
+                                    <th>
+                                      LandLord
+                                    </th>
+                                    
+
+                                  </tr> 
+                                  <tr>
+                                     <td>M.G Road Bangalore-560006</td>
+                                     <td>Bangalore</td>
+                                     <td>Karnataka</td>
+                                     <td>25-07-2024</td>
+                                     <td>27-02-2024</td>
+                                     <td>Name</td>
+                                  </tr> 
+
+                            </table>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div style="display: flex;justify-content: center; ">
+                            <a href="../Booking/booking.html" style="border:2px solid var(--main-color); border-radius: 5px; background:deepskyblue; width: 200px;justify-content: center;color: var(--text-color);padding-left: 60px;padding-top:10px;height: 50px;">Book Here</a>
+                    </div>
+
+              
+            </div>
+
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      </div>
+   
+      
+
+      
+    </section>
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      };
+    </script>
+  </body>
+</html>
